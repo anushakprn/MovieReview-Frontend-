@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Template</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            height: 300px; 
+            overflow: hidden;
+        }
+        .header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .header-text {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section label {
+            font-weight: bold;
+        }
+        .section input[type="text"], .section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="shyam singh roy.jpeg" alt="Header Image" class="header-image">
+    </header>
+    <div class="container">
+        <div class="header-text">Review on Shyam Singha Roy</div>
+        <div class="section">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="section">
+            <label for="director">Director:</label>
+            <input type="text" id="director" name="director">
+        </div>
+        <div class="section">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre">
+        </div>
+        <div class="section">
+            <label for="favorite-scene">Favorite and Most Disliked Scene:</label>
+            <textarea id="favorite-scene" name="favorite-scene" rows="4"></textarea>
+        </div>
+        <div class="section">
+            <label for="message">Message of the Movie:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <div>
+            <input type ="submit">
+        </div>
+    </div>
+</body>
+</html>
